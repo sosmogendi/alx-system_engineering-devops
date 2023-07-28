@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+function display_message {
+  echo "To infinity and beyond"
+}
+
+function invincible {
+  echo "I am invincible!!!"
+  exit 0
+}
+
+# Trap SIGTERM signal and call the invincible function
+trap invincible SIGTERM
+
+# Loop and display the message indefinitely with a sleep of 2 seconds
+while true; do
+  display_message
+  sleep 2
+done
