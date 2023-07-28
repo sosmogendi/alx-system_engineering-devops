@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
 
-while true; do
-    echo "To infinity and beyond"
-    sleep 2
-done
+# Function to display the message repeatedly
+display_message() {
+    while true; do
+        echo "To infinity and beyond"
+        sleep 1
+    done
+}
+
+# Call the function
+display_message
