@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+# Get the PID of the 7-highlander process
+highlander_pid=$(pidof -x "7-highlander")
+
+if [ -z "$highlander_pid" ]; then
+  echo "7-highlander process is not running."
+else
+  echo "Killing 7-highlander process with PID: $highlander_pid"
+  kill "$highlander_pid"
+fi
+
