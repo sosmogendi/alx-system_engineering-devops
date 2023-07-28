@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 
 # This Bash script displays a list of currently running processes, including process hierarchy, in a user-oriented format.
+# It shows all processes, for all users, even those which might not have a TTY.
+
+# Get the PID of this script
+self_pid=$$
 
 # Using the 'ps' command to get process information and displaying only necessary columns in a user-oriented format
-ps -e -o user,pid,%cpu,%mem,vsz,rss,tty,stat,start,time,command --forest | head -n 50
+ps -eo user,pid,%cpu,%mem,vsz,rss,tty,stat,start,time,command --forest | awk -v self_pid=$self_pid '$2 != self_pidi'
