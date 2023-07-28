@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Get the PID of the current Bash process
+current_pid=$$
+
+# Use ps and grep to find lines containing the word "bash" but exclude the grep process itself
+ps_output=$(ps -e -o user,pid,%cpu,%mem,vsz,rss,tty,stat,start,time,command | grep "bash" | grep -v "grep bash")
+
+# Display the lines containing the word "bash" with the current Bash PID
+echo "$ps_output" | sed "s/^/$USER       $current_pid /"
