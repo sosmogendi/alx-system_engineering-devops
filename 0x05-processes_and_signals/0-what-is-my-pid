@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
 
-# This script displays its own PID (Process ID).
+# This Bash script displays its own PID (Process ID).
+# The first line of all Bash scripts should be exactly #!/usr/bin/env bash
+# The second line should be a comment explaining what the script is doing
+
+# Printing the PID
 echo $$
+
+# The script should end with a new line
