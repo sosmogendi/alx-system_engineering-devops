@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# Get the PID of the current script
+script_pid=$$
+
+# Get the PIDs of all running bash processes except the script's PID
+bash_pids=$(pgrep -o bash | grep -vw "$script_pid")
+
+# Display the PID and process name for each bash process
+for pid in $bash_pids; do
+  cmd=$(tr -d '\0' < "/proc/$pid/comm")
+  echo "$pid $cmd"
+done
