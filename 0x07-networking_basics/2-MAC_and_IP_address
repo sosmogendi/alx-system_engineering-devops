@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+# Function to prompt the user and record the answer
+ask_question() {
+  echo "$1"
+  read -r answer
+  echo "$answer" >> answer_file
+  echo >> answer_file
+}
+
+# Clear previous answer_file if it exists
+> answer_file
+
+# Ask questions and record answers
+ask_question "What is a MAC address?"
+ask_question "1. The name of a network interface"
+ask_question "2. The unique identifier of a network interface"
+ask_question "3. A network interface"
+
+ask_question "What is an IP address?"
+ask_question "1. Is to devices connected to a network what postal address is to houses"
+ask_question "2. The unique identifier of a network interface"
+ask_question "3. Is a number that network devices use to connect to networks"
+
+# Validate answers
+echo "Validating answers..."
+expected_answers=("2" "1") # The correct answers for the questions
+
+if diff -q answer_file <(printf '%s\n' "${expected_answers[@]}") >/dev/null; then
+  echo "All answers are correct. Task completed."
+else
+  echo "Some answers are incorrect. Please review your answers."
+fi
+
+# Remove the answer_file
+rm answer_file
