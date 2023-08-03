@@ -1,0 +1,7 @@
+PING facebook.com (8.8.8.8) 56(84) bytes of data.
+64 bytes from facebook.com (8.8.8.8): icmp_seq=1 ttl=49 time=0.961 ms
+64 bytes from facebook.com (8.8.8.8): icmp_seq=2 ttl=49 time=0.963 ms
+
+--- facebook.com ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1001ms
+rtt min/avg/max/mdev = 0.961/0.962/0.963/0.001 ms

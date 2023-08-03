@@ -1,0 +1,67 @@
+#!/usr/bin/env bash
+
+# Function to update localhost entry to 127.0.0.2
+update_localhost_ip() {
+    sudo sed -i 's/^127\.0\.0\.1[[:space:]]localhost$/127\.0\.0\.2 localhost/g' /etc/hosts
+}
+
+# Function to add entry for facebook.com to /etc/hosts
+add_facebook_entry() {
+    echo "8.8.8.8 facebook.com" | sudo tee -a /etc/hosts
+}
+
+# Function to revert localhost entry to 127.0.0.1
+revert_localhost_ip() {
+    sudo sed -i 's/^127\.0\.0\.2[[:space:]]localhost$/127\.0\.0\.1 localhost/g' /etc/hosts
+}
+
+# Output original /etc/hosts file
+echo "ping localhost"
+ping localhost
+
+# Output original localhost ping results and redirect to a file
+ping -c 3 localhost > original_localhost_ping_results.txt
+
+# Output original /etc/hosts file
+echo "ping facebook.com"
+ping facebook.com
+
+# Output original facebook.com ping results and redirect to a file
+ping -c 3 facebook.com > original_facebook_ping_results.txt
+
+# Wait for user input before proceeding
+read -p "Press Enter to update localhost IP to 127.0.0.2"
+
+# Update localhost entry to resolve to 127.0.0.2
+update_localhost_ip
+
+# Output success message
+echo "Updated /etc/hosts file:"
+cat /etc/hosts
+
+# Output updated localhost ping results and redirect to a file
+ping -c 3 localhost > updated_localhost_ping_results.txt
+
+# Wait for user input before proceeding
+read -p "Press Enter to add facebook.com entry"
+
+# Add entry for facebook.com to /etc/hosts
+add_facebook_entry
+
+# Output success message
+echo "Updated /etc/hosts file:"
+cat /etc/hosts
+
+# Output updated facebook.com ping results and redirect to a file
+ping -c 3 facebook.com > updated_facebook_ping_results.txt
+
+# Wait for user input before proceeding
+read -p "Press Enter to revert localhost IP to 127.0.0.1"
+
+# Revert localhost entry to 127.0.0.1
+revert_localhost_ip
+
+# Output success message
+echo "Updated /etc/hosts file:"
+cat /etc/hosts
+
