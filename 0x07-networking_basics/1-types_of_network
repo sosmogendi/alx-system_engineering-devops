@@ -3,16 +3,24 @@
 
 # Question 1
 echo "What type of network a computer in local is connected to?"
-echo "Answer: LAN"
+echo "1. Internet"
+echo "2. WAN"
+echo "3. LAN"
+echo "Answer: 3"
 echo ""
 
 # Question 2
 echo "What type of network could connect an office in one building to another office in a building a few streets away?"
-echo "Answer: WAN"
+echo "1. Internet"
+echo "2. WAN"
+echo "3. LAN"
+echo "Answer: 2"
 echo ""
 
 # Question 3
 echo "What network do you use when you browse www.google.com from your smartphone (not connected to the Wifi)?"
-echo "Answer: Internet"
+echo "1. Internet"
+echo "2. WAN"
+echo "3. LAN"
+echo "Answer: 1"
 echo ""
-
