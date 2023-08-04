@@ -8,23 +8,23 @@ echo "2. WAN"
 echo "3. LAN"
 
 # Provide the correct answer number
-echo "Correct Answer: 3"
+echo -e "Correct Answer: 3\n"
 
 # Question 2
-echo -e "\nWhat type of network could connect an office in one building to another office in a building a few streets away?"
+echo "What type of network could connect an office in one building to another office in a building a few streets away?"
 echo "1. Internet"
 echo "2. WAN"
 echo "3. LAN"
 
 # Provide the correct answer number
-echo -e "\nCorrect Answer: 2"
+echo -e "Correct Answer: 2\n"
 
 # Question 3
-echo -e "\nWhat network do you use when you browse www.google.com from your smartphone (not connected to the Wifi)?"
+echo "What network do you use when you browse www.google.com from your smartphone (not connected to the Wifi)?"
 echo "1. Internet"
 echo "2. WAN"
 echo "3. LAN"
 
 # Provide the correct answer number
-echo -e "\nCorrect Answer: 1"
+echo -e "Correct Answer: 1\n"
 
