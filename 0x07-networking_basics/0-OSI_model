@@ -7,14 +7,15 @@ echo "1. Set of specifications that network hardware manufacturers must respect"
 echo "2. The OSI model is a conceptual model that characterizes the communication functions of a telecommunication system without regard to their underlying internal structure and technology"
 echo "3. The OSI model is a model that characterizes the communication functions of a telecommunication system with a strong regard for their underlying internal structure and technology"
 
+# Provide the correct answer number
+echo "Correct Answer: 2"
+
 # Question 2
 echo -e "\nHow is the OSI model organized?"
 echo "1. Alphabetically"
 echo "2. From the lowest to the highest level"
 echo "3. Randomly"
 
-# Answers to the questions (correct answer number on each line)
-echo -e "\nAnswers:"
-echo "2"
-echo "2"
+# Provide the correct answer number
+echo -e "\nCorrect Answer: 2"
 
