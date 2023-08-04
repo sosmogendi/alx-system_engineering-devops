@@ -1,41 +1,30 @@
 #!/usr/bin/env bash
+# This script provides answers to questions about types of networks.
 
-# Function to prompt the user and record the answer
-ask_question() {
-  echo "$1"
-  read -r answer
-  echo "$answer" >> answer_file
-  echo >> answer_file
-}
+# Question 1
+echo "What type of network a computer in local is connected to?"
+echo "1. Internet"
+echo "2. WAN"
+echo "3. LAN"
 
-# Clear previous answer_file if it exists
-> answer_file
+# Provide the correct answer number
+echo "Correct Answer: 3"
 
-# Ask questions and record answers
-ask_question "What type of network a computer in local is connected to?"
-ask_question "1. Internet"
-ask_question "2. WAN"
-ask_question "3. LAN"
+# Question 2
+echo -e "\nWhat type of network could connect an office in one building to another office in a building a few streets away?"
+echo "1. Internet"
+echo "2. WAN"
+echo "3. LAN"
 
-ask_question "What type of network could connect an office in one building to another office in a building a few streets away?"
-ask_question "1. Internet"
-ask_question "2. WAN"
-ask_question "3. LAN"
+# Provide the correct answer number
+echo -e "\nCorrect Answer: 2"
 
-ask_question "What network do you use when you browse www.google.com from your smartphone (not connected to the Wifi)?"
-ask_question "1. Internet"
-ask_question "2. WAN"
-ask_question "3. LAN"
+# Question 3
+echo -e "\nWhat network do you use when you browse www.google.com from your smartphone (not connected to the Wifi)?"
+echo "1. Internet"
+echo "2. WAN"
+echo "3. LAN"
 
-# Validate answers
-echo "Validating answers..."
-expected_answers=("3" "2" "1") # The correct answers for the questions
+# Provide the correct answer number
+echo -e "\nCorrect Answer: 1"
 
-if diff -q answer_file <(printf '%s\n' "${expected_answers[@]}") >/dev/null; then
-  echo "All answers are correct. Task completed."
-else
-  echo "Some answers are incorrect. Please review your answers."
-fi
-
-# Remove the answer_file
-rm answer_file
