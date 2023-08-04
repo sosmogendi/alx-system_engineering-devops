@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
-# This script answers questions about the OSI model.
+# This script provides answers to questions about the OSI model.
 
 # Question 1
-echo "Question 1: What is the OSI model?"
-echo "2. The OSI model is a conceptual model that characterizes the communication functions of a telecommunication system without regard to their underlying internal structure and technology"
+echo "What is the OSI model?"
+echo "The OSI model is a conceptual model that characterizes the communication functions of a telecommunication system without regard to their underlying internal structure and technology"
 
 # Question 2
-echo -e "\nQuestion 2: How is the OSI model organized?"
-echo "2. From the lowest to the highest level"
+echo -e "\nHow is the OSI model organized?"
+echo "From the lowest level to the highest level"
+
