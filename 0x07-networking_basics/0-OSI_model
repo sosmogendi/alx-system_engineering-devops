@@ -7,5 +7,5 @@ echo "The OSI model is a conceptual model that characterizes the communication f
 
 # Question 2
 echo -e "\nHow is the OSI model organized?"
-echo "From the lowest level to the highest level"
+echo "The OSI model is organized from the lowest level to the highest level"
 
