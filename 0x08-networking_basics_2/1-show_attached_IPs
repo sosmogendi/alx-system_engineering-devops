@@ -2,9 +2,10 @@
 
 # Bash script that displays all active IPv4 IPs on the machine it’s executed on.
 
-# Use 'ifconfig' to retrieve network interface information, 'grep' to filter lines containing 'inet ',
-# and 'awk' to extract the IP address.
-ipv4_addresses=$(ifconfig | grep 'inet ' | awk '{print $2}' | cut -d':' -f2)
+# Use 'ifconfig' command to retrieve network interface information,
+# 'grep' to filter lines containing 'inet' followed by an IPv4 address pattern,
+# and 'awk' to extract the IPv4 address part.
+ipv4_addresses=$(ifconfig | grep -Eo "inet (addr:)?([0-9]*\.){3}[0-9]*" | awk '{print $2}')
 
 # Display the list of active IPv4 addresses.
 echo "$ipv4_addresses"

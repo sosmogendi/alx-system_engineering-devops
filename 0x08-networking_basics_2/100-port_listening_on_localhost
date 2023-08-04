@@ -1,21 +1,3 @@
 #!/usr/bin/env bash
-
-# Start listening on port 98
-nc -l -p 98 > /tmp/100-port_listening_output &
-
-echo "Starting my script."
-
-# Wait for the netcat process to start listening
-sleep 1
-
-# Wait for user input to terminate the script
-read -p "Press Enter to stop the script and netcat..."
-
-# Kill the netcat process
-kill $(cat /tmp/100-port_listening_output)
-
-# Clean up the temporary file
-rm /tmp/100-port_listening_output
-
-echo "Script terminated. Stopping netcat..."
-
+# Bash script that listens on port 98 on localhost
+nc -l localhost 98
