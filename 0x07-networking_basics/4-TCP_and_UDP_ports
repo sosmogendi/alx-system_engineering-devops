@@ -1,15 +1,6 @@
 #!/usr/bin/env bash
+# Write a Bash script that displays listening ports
+#+ That only shows listening sockets
+#+ That shows the PID and name of the program to which each socket belongs
 
-# Check if the script is being run as root
-if [[ $EUID -ne 0 ]]; then
-  echo "This script must be run as root. Please use sudo."
-  exit 1
-fi
-
-# Display listening TCP and UDP ports
-echo "Active Internet connections (only servers)"
-netstat -tuln
-
-echo "Active UNIX domain sockets (only servers)"
-netstat -lx
-
+sudo netstat -lp
