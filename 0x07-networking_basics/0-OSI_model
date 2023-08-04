@@ -1,36 +1,10 @@
 #!/usr/bin/env bash
+# This script answers questions about the OSI model.
 
-# Function to prompt the user and record the answer
-ask_question() {
-  echo "$1"
-  read -r answer
-  echo "$answer" >> answer_file
-  echo >> answer_file
-}
+# Question 1
+echo "Question 1: What is the OSI model?"
+echo "2. The OSI model is a conceptual model that characterizes the communication functions of a telecommunication system without regard to their underlying internal structure and technology"
 
-# Clear previous answer_file if it exists
-> answer_file
-
-# Ask questions and record answers
-ask_question "What is the OSI model?"
-ask_question "1. Set of specifications that network hardware manufacturers must respect"
-ask_question "2. The OSI model is a conceptual model that characterizes the communication functions of a telecommunication system without regard to their underlying internal structure and technology"
-ask_question "3. The OSI model is a model that characterizes the communication functions of a telecommunication system with a strong regard for their underlying internal structure and technology"
-
-ask_question "How is the OSI model organized?"
-ask_question "1. Alphabetically"
-ask_question "2. From the lowest to the highest level"
-ask_question "3. Randomly"
-
-# Validate answers
-echo "Validating answers..."
-expected_answers=("2" "2") # The correct answers for the questions
-
-if diff -q answer_file <(printf '%s\n' "${expected_answers[@]}") >/dev/null; then
-  echo "All answers are correct. Task completed."
-else
-  echo "Some answers are incorrect. Please review your answers."
-fi
-
-# Remove the answer_file
-rm answer_file
+# Question 2
+echo -e "\nQuestion 2: How is the OSI model organized?"
+echo "2. From the lowest to the highest level"
