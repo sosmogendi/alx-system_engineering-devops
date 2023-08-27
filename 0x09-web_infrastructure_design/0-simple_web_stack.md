@@ -1,4 +1,4 @@
-![Simple Web Stack](https://drive.google.com/uc?export=view&id=1mMVqb0EsgBcSMb4RDIoQoPm54hzXfeOe)
+![Simple Web Stack](0-simple_web_stack.JPG)
 
 # Exploring Web Infrastructure Design: Concepts and Challenges
 
