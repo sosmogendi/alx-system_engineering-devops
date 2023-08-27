@@ -1,4 +1,4 @@
-![Scaled up web infrastructure](3-scale_up.jpg)
+![Scaled up web infrastructure](3-scale_up.JPG)
 
 # Building a Scalable Web Infrastructure: Load Balancing and Component Separation
 
