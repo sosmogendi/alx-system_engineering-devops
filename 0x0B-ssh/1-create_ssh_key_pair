@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+# Define the key file names
+private_key="school"
+public_key="school.pub"
+
+# Check if the private key file already exists
+if [ -f "$private_key" ]; then
+    echo "Private key file \"$private_key\" already exists."
+    exit 1
+fi
+
+# Generate the RSA key pair with a passphrase
+ssh-keygen -t rsa -b 4096 -f "$private_key" -N "betty"
+
+# Check if the key generation was successful
+if [ $? -eq 0 ]; then
+    echo "RSA key pair successfully generated."
+    echo "Your identification has been saved in $private_key."
+    echo "Your public key has been saved in $public_key."
+    echo "The key fingerprint is:"
+    ssh-keygen -lf "$private_key"
+    echo "The key's randomart image is:"
+    ssh-keygen -lvf "$private_key"
+else
+    echo "Error: RSA key pair generation failed."
+fi
