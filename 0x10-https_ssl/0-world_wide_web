@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+# Function to display information about a subdomain
+display_info() {
+    subdomain="$1"
+    domain="$2"
+    result=$(dig "$subdomain.$domain" | grep -A1 'ANSWER SECTION:')
+    record_type=$(echo "$result" | awk '{print $4}')
+    destination=$(echo "$result" | awk '{print $5}')
+    echo "The subdomain $subdomain is a $record_type record and points to $destination"
+}
+
+# Define your server information
+web_server_01_ip="54.87.234.24"
+web_server_02_ip="18.235.243.195"
+load_balancer_ip="35.153.93.22"
+
+# Main script
+if [ $# -eq 1 ]; then
+    # If only the domain is provided, display information for all subdomains
+    domain="$1"
+    subdomains=("www" "lb-01" "web-01" "web-02")
+    for subdomain in "${subdomains[@]}"; do
+        display_info "$subdomain" "$domain"
+    done
+elif [ $# -eq 2 ]; then
+    # If both domain and subdomain are provided, display information for the specified subdomain
+    subdomain="$2"
+    domain="$1"
+    display_info "$subdomain" "$domain"
+else
+    echo "Usage: $0 <domain> [subdomain]"
+    exit 1
+fi
