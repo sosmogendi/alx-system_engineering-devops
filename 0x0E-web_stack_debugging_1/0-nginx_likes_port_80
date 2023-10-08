@@ -1,27 +1,4 @@
 #!/usr/bin/env bash
-# Change Nginx server to listen on port 80 and restart
-
-# Check if Nginx is installed
-if ! command -v nginx &>/dev/null; then
-    echo "Nginx is not installed. Please install it first."
-    exit 1
-fi
-
-# Check if Nginx is running
-if ! pgrep -x nginx &>/dev/null; then
-    echo "Nginx is not running. Starting Nginx..."
-    sudo service nginx start
-fi
-
-# Update Nginx configuration to listen on port 80
+# This script configures Nginx to listen on port 80 and restarts it.
 sed -i "s/8080/80/g" /etc/nginx/sites-enabled/default
-
-# Test Nginx configuration
-if sudo nginx -t; then
-    # Restart Nginx to apply changes
-    sudo service nginx restart
-    echo "Nginx is now listening on port 80."
-else
-    echo "Nginx configuration has errors. Please fix them."
-    exit 1
-fi
+service nginx restart
