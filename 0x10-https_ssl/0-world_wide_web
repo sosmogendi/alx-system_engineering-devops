@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+# Script to report information about server subdomains
+
+check_domain() {
+  local domain="$1"
+  local subdomain="$2"
+  local subdomains=("www" "lb-01" "web-01" "web-02")
+
+  # Validate input
+  if [ -z "$domain" ]; then
+    echo "Error: Domain name not provided."
+    exit 1
+  fi
+
+  if [ -z "$subdomain" ]; then
+    # No subdomain specified, do all
+    for sub in "${subdomains[@]}"; do
+      query_domain="$sub.$domain"
+      result=$(dig "$query_domain" +short)
+      record_type=$(dig "$query_domain" +short | awk '{print $2}')
+      destination=$(dig "$query_domain" +short)
+
+      echo "The subdomain $sub is a $record_type record and points to $destination"
+    done
+  else
+    # Subdomain specified
+    query_domain="$subdomain.$domain"
+    result=$(dig "$query_domain" +short)
+    record_type=$(dig "$query_domain" +short | awk '{print $2}')
+    destination=$(dig "$query_domain" +short)
+
+    echo "The subdomain $subdomain is a $record_type record and points to $destination"
+  fi
+}
+
+check_domain "$1" "$2"
