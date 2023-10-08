@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-# This script installs and configures Nginx to listen on port 80 for all active IPv4 IPs.
-apt-get update && apt-get install -y nginx && echo "daemon off;" >> /etc/nginx/nginx.conf
-service nginx start
