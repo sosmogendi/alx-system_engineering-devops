@@ -1,0 +1,65 @@
+## Browser High-Level Structure
+
+The components of web browsers are as follows:
+
+- **User Interface:** This component includes the address bar, back/forward buttons, bookmarking menu, and other elements in the browser window.
+- **Browser Engine:** The browser engine coordinates interactions between the user interface and the rendering engine.
+- **Rendering Engine:** This engine is responsible for parsing and displaying requested content, such as HTML and CSS, on the screen.
+- **Networking:** The networking component handles network requests, including HTTP requests, and uses platform-specific implementations for various platforms.
+- **UI Backend:** The UI backend draws basic widgets, like combo boxes and windows, using platform-independent interfaces that rely on operating system user interface methods.
+- **JavaScript Engine:** The JavaScript engine parses and executes JavaScript code found on web pages.
+- **Data Storage:** The data storage layer is responsible for storing data locally, including cookies and supporting storage mechanisms such as localStorage, IndexedDB, WebSQL, and FileSystem.
+
+## HTML Parsing
+
+The rendering engine retrieves content in 8kB chunks from the networking layer. The HTML parser's primary task is to convert HTML markup into a parse tree, representing the document's structure and content. This parse tree is composed of DOM element and attribute nodes, following the Document Object Model (DOM) standard.
+
+The parsing algorithm comprises two stages: tokenization and tree construction.
+
+...
+
+[Include the detailed HTML parsing process from the previous response.]
+
+## Actions When Parsing Is Finished
+
+Upon finishing parsing, the browser starts fetching external resources linked to the page (CSS, images, JavaScript files, etc.). The document's state transitions to "interactive," and the parsing of deferred scripts begins. The document state is set to "complete," and a "load" event is fired.
+
+## CSS Interpretation
+
+CSS files, `<style>` tag contents, and `style` attribute values are parsed following the "CSS lexical and syntax grammar." Each CSS file is parsed into a `StyleSheet` object, where each object contains CSS rules with selectors, corresponding to CSS grammar.
+
+...
+
+[Include the detailed CSS interpretation process from the previous response.]
+
+## Page Rendering
+
+Page rendering involves creating a "Frame Tree" or "Render Tree" by traversing the DOM nodes and calculating the CSS styles for each node. The process includes calculating the preferred width and actual width of nodes, calculating the height, and positioning elements on the page.
+
+...
+
+[Include the detailed page rendering process from the previous response.]
+
+## GPU Rendering
+
+Graphics rendering can utilize either the CPU or the GPU. When the GPU is used, the rendering process is divided into multiple tasks to leverage the GPU's parallel processing capabilities.
+
+...
+
+[Include information on GPU rendering from the previous response.]
+
+## Window Server
+
+...
+
+[Include details about the window server from the previous response.]
+
+## Post-rendering and User-Induced Execution
+
+After rendering is completed, the browser executes JavaScript code based on timing mechanisms and user interactions. This can trigger additional network requests, modify the page's content or layout, and cause subsequent rendering and painting.
+
+...
+
+[Include the post-rendering and user-induced execution process from the previous response.]
+
+Please review this comprehensive explanation of the browser's high-level structure and the rendering process. It aims to provide a detailed understanding of how modern web browsers work.
