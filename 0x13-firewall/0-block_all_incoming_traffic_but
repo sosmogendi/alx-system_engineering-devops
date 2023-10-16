@@ -1,5 +1,7 @@
+sudo ufw status verbose
 # Deny all incoming traffic by default
 sudo ufw default deny incoming
+sudo ufw default allow outgoing
 # Allow incoming SSH (port 22) connections
 sudo ufw allow 22/tcp
 
