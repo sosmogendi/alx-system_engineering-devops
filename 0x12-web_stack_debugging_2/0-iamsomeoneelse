@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Check if the username argument is provided
+if [ -z "$1" ]; then
+    echo "Usage: $0 <username>"
+    exit 1
+fi
+
+# Specify a valid shell (e.g., /bin/bash) and run the 'whoami' command under the specified user
+su -s /bin/bash - "$1" -c 'whoami'
