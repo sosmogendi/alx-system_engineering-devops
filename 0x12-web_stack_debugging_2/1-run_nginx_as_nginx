@@ -1,13 +1,20 @@
 #!/usr/bin/env bash
 
-# Modify Nginx configuration
-sed -i 's/80 default_server/8080 default_server/' /etc/nginx/sites-available/default
+# Change Nginx user in the configuration
+sed -i 's/user  www-data;/user nginx;/' /etc/nginx/nginx.conf
 
-# Change ownership to nginx user and group for the Nginx configuration file
-chown nginx:nginx /etc/nginx/nginx.conf
+# Change the default site configuration to listen on port 8080
+sed -i 's/listen 80 default_server;/listen 8080 default_server;/' /etc/nginx/sites-available/default
 
-# Set file permissions to 755 for the Nginx configuration file
-chmod 755 /etc/nginx/nginx.conf
+# Remove the default symbolic link in sites-enabled
+rm -f /etc/nginx/sites-enabled/default
 
-# Restart Nginx
-service nginx restart
+# Create a symbolic link to enable the default site configuration
+ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
+
+# Test Nginx configuration and reload
+nginx -t
+service nginx reload
+
+# Verify Nginx is running as the nginx user
+ps aux | grep 'nginx:'
