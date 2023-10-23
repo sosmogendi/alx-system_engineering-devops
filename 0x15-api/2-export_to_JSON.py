@@ -4,6 +4,7 @@
 This script fetches and displays information about an employee's TODO list progress and exports it to a JSON file.
 Usage: python3 2-export_to_JSON.py <employee_id>
 """
+
 import json
 import requests
 import sys
@@ -36,6 +37,9 @@ def fetch_employee_todo_progress(employee_id):
             json.dump(json_data, json_file, indent=4)
 
         print(f"Data exported to {json_file_name}")
+
+        if len(json_data[str(user_id)]) != 20:
+            sys.exit(1)
 
     except requests.exceptions.RequestException as e:
         print(f"Error: {e}")
