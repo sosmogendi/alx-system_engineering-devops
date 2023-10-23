@@ -1,13 +1,14 @@
 #!/usr/bin/python3
+
+"""
+This script fetches and displays information about an employee's TODO list progress.
+Usage: python3 0-gather_data_from_an_API.py <employee_id>
+"""
+
 import requests
 import sys
 
-if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python3 0-gather_data_from_an_API.py <employee_id>")
-        sys.exit(1)
-
-    employee_id = sys.argv[1]
+def fetch_employee_todo_progress(employee_id):
     base_url = "https://jsonplaceholder.typicode.com"
     user_url = f"{base_url}/users/{employee_id}"
     tasks_url = f"{base_url}/todos?userId={employee_id}"
@@ -28,3 +29,11 @@ if __name__ == "__main__":
 
     except requests.exceptions.RequestException as e:
         print(f"Error: {e}")
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: python3 0-gather_data_from_an_API.py <employee_id>")
+        sys.exit(1)
+
+    employee_id = sys.argv[1]
+    fetch_employee_todo_progress(employee_id)
