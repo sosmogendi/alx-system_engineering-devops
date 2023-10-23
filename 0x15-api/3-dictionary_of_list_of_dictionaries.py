@@ -34,6 +34,11 @@ def fetch_employee_todo_data():
                     "completed": task["completed"]
                 })
 
+        # Include all users in the output
+        for user in users_data:
+            if str(user["id"]) not in todo_data:
+                todo_data[str(user["id"])] = []
+
         with open("todo_all_employees.json", "w") as json_file:
             json.dump(todo_data, json_file)
 
