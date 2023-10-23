@@ -4,9 +4,8 @@
 This script fetches and displays information about an employee's TODO list progress and exports it to a JSON file.
 Usage: python3 2-export_to_JSON.py <employee_id>
 """
-
-import requests
 import json
+import requests
 import sys
 
 def fetch_employee_todo_progress(employee_id):
