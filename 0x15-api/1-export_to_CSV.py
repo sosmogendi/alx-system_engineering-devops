@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-This script fetches employee data and exports their tasks to a CSV file.
+This script fetches and displays information about an employee's TODO list progress and exports it to a CSV file.
 Usage: python3 1-export_to_CSV.py <employee_id>
 """
 
@@ -10,6 +10,9 @@ import requests
 import sys
 
 def fetch_employee_todo_progress(employee_id):
+    """
+    Fetches and displays an employee's TODO list progress.
+    """
     base_url = "https://jsonplaceholder.typicode.com"
     user_url = f"{base_url}/users/{employee_id}"
     tasks_url = f"{base_url}/todos?userId={employee_id}"
@@ -22,14 +25,14 @@ def fetch_employee_todo_progress(employee_id):
 
         employee_name = user_data.get("name")
         user_id = user_data.get("id")
-        
+
         # Create a CSV file named USER_ID.csv
         csv_file_name = f"{user_id}.csv"
 
         with open(csv_file_name, mode="w", newline="") as csv_file:
             fieldnames = ["USER_ID", "USERNAME", "TASK_COMPLETED_STATUS", "TASK_TITLE"]
             writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
-            
+
             writer.writeheader()
             for task in tasks_data:
                 writer.writerow({
