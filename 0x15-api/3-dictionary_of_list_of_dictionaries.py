@@ -1,12 +1,14 @@
 #!/usr/bin/python3
 
 """
-This script fetches information about employee TODO lists from a REST API and exports it to a JSON file.
+This script fetches information about employee TODO lists from a REST API and
+exports it to a JSON file.
 Usage: python3 3-dictionary_of_list_of_dictionaries.py
 """
 
 import json
 import requests
+
 
 def fetch_employee_todo_data():
     base_url = "https://jsonplaceholder.typicode.com"
@@ -46,6 +48,7 @@ def fetch_employee_todo_data():
 
     except requests.exceptions.RequestException as e:
         print(f"Error: {e}")
+
 
 if __name__ == "__main__":
     fetch_employee_todo_data()
