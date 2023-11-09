@@ -1,0 +1,422 @@
+3857  execve("/usr/bin/curl", ["curl", "-I", "127.0.0.1"], [/* 14 vars */]) = 0
+3857  brk(0)                            = 0x2579000
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb57dde8000
+3857  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+3857  open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=23363, ...}) = 0
+3857  mmap(NULL, 23363, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fb57dde2000
+3857  close(3)                          = 0
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/usr/lib/x86_64-linux-gnu/libcurl.so.4", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260\231\0\0\0\0\0\0@\0\0\0\0\0\0\0(l\6\0\0\0\0\0\0\0\0\0@\0008\0\7\0@\0\34\0\33\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\374>\6\0\0\0\0\0\374>\6\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0\220F\6\0\0\0\0\0\220F&\0\0\0\0\0\220F&\0\0\0\0\0`$\0\0\0\0\0\0\30'\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\340\\\6\0\0\0\0\0\340\\&\0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=422696, ...}) = 0
+3857  mmap(NULL, 2518440, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb57d961000
+3857  mprotect(0x7fb57d9c5000, 2097152, PROT_NONE) = 0
+3857  mmap(0x7fb57dbc5000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x64000) = 0x7fb57dbc5000
+3857  close(3)                          = 0
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\36\0\0\0\0\0\0@\0\0\0\0\0\0\0x\202\1\0\0\0\0\0\0\0\0\0@\0008\0\7\0@\0\34\0\33\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\254y\1\0\0\0\0\0\254y\1\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0\300|\1\0\0\0\0\0\300|!\0\0\0\0\0\300|!\0\0\0\0\0\200\4\0\0\0\0\0\0\210\4\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\320}\1\0\0\0\0\0\320}!\0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=100728, ...}) = 0
+3857  mmap(NULL, 2195784, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb57d748000
+3857  mprotect(0x7fb57d760000, 2093056, PROT_NONE) = 0
+3857  mmap(0x7fb57d95f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7fb57d95f000
+3857  close(3)                          = 0
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0po\0\0\0\0\0\0@\0\0\0\0\0\0\0h\225\1\0\0\0\0\0\0\0\0\0@\0008\0\t\0@\0%\0\"\0\6\0\0\0\5\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\370\1\0\0\0\0\0\0\370\1\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\200/\1\0\0\0\0\0\200/\1\0\0\0\0\0\200/\1\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0755, st_size=141574, ...}) = 0
+3857  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb57dde1000
+3857  mmap(NULL, 2217264, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb57d52a000
+3857  mprotect(0x7fb57d543000, 2093056, PROT_NONE) = 0
+3857  mmap(0x7fb57d742000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x18000) = 0x7fb57d742000
+3857  mmap(0x7fb57d744000, 13616, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fb57d744000
+3857  close(3)                          = 0
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P \2\0\0\0\0\0@\0\0\0\0\0\0\0 \6\34\0\0\0\0\0\0\0\0\0@\0008\0\n\0@\0D\0C\0\6\0\0\0\5\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0000\2\0\0\0\0\0\0000\2\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0Pz\30\0\0\0\0\0Pz\30\0\0\0\0\0Pz\30\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0755, st_size=1840928, ...}) = 0
+3857  mmap(NULL, 3949248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb57d165000
+3857  mprotect(0x7fb57d31f000, 2097152, PROT_NONE) = 0
+3857  mmap(0x7fb57d51f000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1ba000) = 0x7fb57d51f000
+3857  mmap(0x7fb57d525000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fb57d525000
+3857  close(3)                          = 0
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/usr/lib/x86_64-linux-gnu/libidn.so.11", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300+\0\0\0\0\0\0@\0\0\0\0\0\0\0\30\"\3\0\0\0\0\0\0\0\0\0@\0008\0\7\0@\0\34\0\33\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\274\16\3\0\0\0\0\0\274\16\3\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0\230\22\3\0\0\0\0\0\230\22#\0\0\0\0\0\230\22#\0\0\0\0\0`\16\0\0\0\0\0\0h\16\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\300\35\3\0\0\0\0\0\300\35#\0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=207128, ...}) = 0
+3857  mmap(NULL, 2302208, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb57cf32000
+3857  mprotect(0x7fb57cf63000, 2097152, PROT_NONE) = 0
+3857  mmap(0x7fb57d163000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x31000) = 0x7fb57d163000
+3857  close(3)                          = 0
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/usr/lib/x86_64-linux-gnu/librtmp.so.0", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340P\0\0\0\0\0\0@\0\0\0\0\0\0\0`\226\1\0\0\0\0\0\0\0\0\0@\0008\0\7\0@\0\32\0\31\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\324\203\1\0\0\0\0\0\324\203\1\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0 \206\1\0\0\0\0\0 \206!\0\0\0\0\0 \206!\0\0\0\0\0X\17\0\0\0\0\0\0\210\17\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\240\215\1\0\0\0\0\0\240\215!\0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=105696, ...}) = 0
+3857  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb57dde0000
+3857  mmap(NULL, 2201000, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb57cd18000
+3857  mprotect(0x7fb57cd31000, 2093056, PROT_NONE) = 0
+3857  mmap(0x7fb57cf30000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x18000) = 0x7fb57cf30000
+3857  close(3)                          = 0
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/lib/x86_64-linux-gnu/libssl.so.1.0.0", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240.\1\0\0\0\0\0@\0\0\0\0\0\0\0\310\341\5\0\0\0\0\0\0\0\0\0@\0008\0\7\0@\0\34\0\33\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\314H\5\0\0\0\0\0\314H\5\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0\330Q\5\0\0\0\0\0\330Q%\0\0\0\0\0\330Q%\0\0\0\0\0\270\216\0\0\0\0\0\0\270\217\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\210}\5\0\0\0\0\0\210}%\0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=387272, ...}) = 0
+3857  mmap(NULL, 2482576, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb57cab9000
+3857  mprotect(0x7fb57cb0e000, 2097152, PROT_NONE) = 0
+3857  mmap(0x7fb57cd0e000, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x55000) = 0x7fb57cd0e000
+3857  close(3)                          = 0
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/lib/x86_64-linux-gnu/libcrypto.so.1.0.0", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\356\5\0\0\0\0\0@\0\0\0\0\0\0\0 ~\35\0\0\0\0\0\0\0\0\0@\0008\0\7\0@\0\34\0\33\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\4$\33\0\0\0\0\0\4$\33\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0\270-\33\0\0\0\0\0\270-;\0\0\0\0\0\270-;\0\0\0\0\0)O\2\0\0\0\0\0\340\212\2\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\260\311\34\0\0\0\0\0\260\311<\0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=1934624, ...}) = 0
+3857  mmap(NULL, 4044952, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb57c6dd000
+3857  mprotect(0x7fb57c890000, 2093056, PROT_NONE) = 0
+3857  mmap(0x7fb57ca8f000, 155648, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b2000) = 0x7fb57ca8f000
+3857  mmap(0x7fb57cab5000, 14488, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fb57cab5000
+3857  close(3)                          = 0
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/usr/lib/x86_64-linux-gnu/libgssapi_krb5.so.2", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0000\263\0\0\0\0\0\0@\0\0\0\0\0\0\0\330g\4\0\0\0\0\0\0\0\0\0@\0008\0\7\0@\0\34\0\33\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0,7\4\0\0\0\0\0,7\4\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0\240C\4\0\0\0\0\0\240C$\0\0\0\0\0\240C$\0\0\0\0\0\30#\0\0\0\0\0\0`%\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0HL\4\0\0\0\0\0HL$\0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=290520, ...}) = 0
+3857  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb57dddf000
+3857  mmap(NULL, 2386176, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb57c496000
+3857  mprotect(0x7fb57c4da000, 2097152, PROT_NONE) = 0
+3857  mmap(0x7fb57c6da000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x44000) = 0x7fb57c6da000
+3857  close(3)                          = 0
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/usr/lib/x86_64-linux-gnu/liblber-2.4.so.2", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0+\0\0\0\0\0\0@\0\0\0\0\0\0\0x\342\0\0\0\0\0\0\0\0\0\0@\0008\0\7\0@\0\32\0\31\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\264\314\0\0\0\0\0\0\264\314\0\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0p\334\0\0\0\0\0\0p\334 \0\0\0\0\0p\334 \0\0\0\0\0\340\4\0\0\0\0\0\0x\5\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\210\334\0\0\0\0\0\0\210\334 \0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=59640, ...}) = 0
+3857  mmap(NULL, 2154984, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb57c287000
+3857  mprotect(0x7fb57c294000, 2097152, PROT_NONE) = 0
+3857  mmap(0x7fb57c494000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd000) = 0x7fb57c494000
+3857  close(3)                          = 0
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/usr/lib/x86_64-linux-gnu/libldap_r-2.4.so.2", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0000\320\0\0\0\0\0\0@\0\0\0\0\0\0\0000\347\4\0\0\0\0\0\0\0\0\0@\0008\0\7\0@\0\33\0\32\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\364\300\4\0\0\0\0\0\364\300\4\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0\260\314\4\0\0\0\0\0\260\314$\0\0\0\0\0\260\314$\0\0\0\0\0P\31\0\0\0\0\0\0X>\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\350\324\4\0\0\0\0\0\350\324$\0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=323056, ...}) = 0
+3857  mmap(NULL, 2427656, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb57c036000
+3857  mprotect(0x7fb57c083000, 2093056, PROT_NONE) = 0
+3857  mmap(0x7fb57c282000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4c000) = 0x7fb57c282000
+3857  mmap(0x7fb57c285000, 6920, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fb57c285000
+3857  close(3)                          = 0
+3857  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb57ddde000
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/usr/lib/x86_64-linux-gnu/libgnutls.so.26", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0d\1\0\0\0\0\0@\0\0\0\0\0\0\0\310\314\v\0\0\0\0\0\0\0\0\0@\0008\0\7\0@\0\34\0\33\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0004c\v\0\0\0\0\0004c\v\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0 j\v\0\0\0\0\0 j+\0\0\0\0\0 j+\0\0\0\0\0pa\0\0\0\0\0\0\320i\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\350\274\v\0\0\0\0\0\350\274+\0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=775112, ...}) = 0
+3857  mmap(NULL, 2872304, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb57bd78000
+3857  mprotect(0x7fb57be2f000, 2093056, PROT_NONE) = 0
+3857  mmap(0x7fb57c02e000, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb6000) = 0x7fb57c02e000
+3857  mmap(0x7fb57c035000, 1008, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fb57c035000
+3857  close(3)                          = 0
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/lib/x86_64-linux-gnu/libgcrypt.so.11", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\177\0\0\0\0\0\0@\0\0\0\0\0\0\0\240\372\7\0\0\0\0\0\0\0\0\0@\0008\0\7\0@\0\34\0\33\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0$\266\7\0\0\0\0\0$\266\7\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0\260\303\7\0\0\0\0\0\260\303'\0\0\0\0\0\260\303'\0\0\0\0\0\2635\0\0\0\0\0\0\320:\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\300\315\7\0\0\0\0\0\300\315'\0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=524704, ...}) = 0
+3857  mmap(NULL, 2621056, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb57baf8000
+3857  mprotect(0x7fb57bb74000, 2097152, PROT_NONE) = 0
+3857  mmap(0x7fb57bd74000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7c000) = 0x7fb57bd74000
+3857  close(3)                          = 0
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\16\0\0\0\0\0\0@\0\0\0\0\0\0\0\3101\0\0\0\0\0\0\0\0\0\0@\0008\0\t\0@\0\36\0\35\0\6\0\0\0\5\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\370\1\0\0\0\0\0\0\370\1\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\200\32\0\0\0\0\0\0\200\32\0\0\0\0\0\0\200\32\0\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=14664, ...}) = 0
+3857  mmap(NULL, 2109744, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb57b8f4000
+3857  mprotect(0x7fb57b8f7000, 2093056, PROT_NONE) = 0
+3857  mmap(0x7fb57baf6000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fb57baf6000
+3857  close(3)                          = 0
+3857  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb57dddd000
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/usr/lib/x86_64-linux-gnu/libkrb5.so.3", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0p\4\2\0\0\0\0\0@\0\0\0\0\0\0\0\200\251\f\0\0\0\0\0\0\0\0\0@\0008\0\7\0@\0\34\0\33\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\374\272\v\0\0\0\0\0\374\272\v\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0\300\303\v\0\0\0\0\0\300\303+\0\0\0\0\0\300\303+\0\0\0\0\0\250\344\0\0\0\0\0\0\300\347\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\340\214\f\0\0\0\0\0\340\214,\0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=831616, ...}) = 0
+3857  mmap(NULL, 2927488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb57b629000
+3857  mprotect(0x7fb57b6e5000, 2097152, PROT_NONE) = 0
+3857  mmap(0x7fb57b8e5000, 61440, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xbc000) = 0x7fb57b8e5000
+3857  close(3)                          = 0
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/usr/lib/x86_64-linux-gnu/libk5crypto.so.3", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 @\0\0\0\0\0\0@\0\0\0\0\0\0\0\310\322\2\0\0\0\0\0\0\0\0\0@\0008\0\7\0@\0\34\0\33\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\354\272\2\0\0\0\0\0\354\272\2\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0(\277\2\0\0\0\0\0(\277\"\0\0\0\0\0(\277\"\0\0\0\0\0\200\22\0\0\0\0\0\0p!\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\230\315\2\0\0\0\0\0\230\315\"\0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=186824, ...}) = 0
+3857  mmap(NULL, 2285720, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb57b3fa000
+3857  mprotect(0x7fb57b426000, 2093056, PROT_NONE) = 0
+3857  mmap(0x7fb57b625000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2b000) = 0x7fb57b625000
+3857  mmap(0x7fb57b628000, 152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fb57b628000
+3857  close(3)                          = 0
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/lib/x86_64-linux-gnu/libcom_err.so.2", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\24\0\0\0\0\0\0@\0\0\0\0\0\0\0@2\0\0\0\0\0\0\0\0\0\0@\0008\0\10\0@\0\33\0\32\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\24%\0\0\0\0\0\0\24%\0\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0\214-\0\0\0\0\0\0\214- \0\0\0\0\0\214- \0\0\0\0\0\254\3\0\0\0\0\0\0<\4\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\270-\0\0\0\0\0\0\270- \0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=14592, ...}) = 0
+3857  mmap(NULL, 2109896, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb57b1f6000
+3857  mprotect(0x7fb57b1f9000, 2093056, PROT_NONE) = 0
+3857  mmap(0x7fb57b3f8000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fb57b3f8000
+3857  close(3)                          = 0
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/usr/lib/x86_64-linux-gnu/libkrb5support.so.0", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@(\0\0\0\0\0\0@\0\0\0\0\0\0\0\230\243\0\0\0\0\0\0\0\0\0\0@\0008\0\7\0@\0\34\0\33\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0T\230\0\0\0\0\0\0T\230\0\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0 \235\0\0\0\0\0\0 \235 \0\0\0\0\0 \235 \0\0\0\0\0X\5\0\0\0\0\0\0\310\6\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0X\235\0\0\0\0\0\0X\235 \0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=43672, ...}) = 0
+3857  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb57dddc000
+3857  mmap(NULL, 2139112, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb57afeb000
+3857  mprotect(0x7fb57aff5000, 2093056, PROT_NONE) = 0
+3857  mmap(0x7fb57b1f4000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9000) = 0x7fb57b1f4000
+3857  close(3)                          = 0
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/lib/x86_64-linux-gnu/libresolv.so.2", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320:\0\0\0\0\0\0@\0\0\0\0\0\0\0\270\203\1\0\0\0\0\0\0\0\0\0@\0008\0\t\0@\0\37\0\36\0\6\0\0\0\5\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\370\1\0\0\0\0\0\0\370\1\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0pA\1\0\0\0\0\0pA\1\0\0\0\0\0pA\1\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=101240, ...}) = 0
+3857  mmap(NULL, 2206376, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb57add0000
+3857  mprotect(0x7fb57ade7000, 2097152, PROT_NONE) = 0
+3857  mmap(0x7fb57afe7000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7fb57afe7000
+3857  mmap(0x7fb57afe9000, 6824, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fb57afe9000
+3857  close(3)                          = 0
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/usr/lib/x86_64-linux-gnu/libsasl2.so.2", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`+\0\0\0\0\0\0@\0\0\0\0\0\0\0000\244\1\0\0\0\0\0\0\0\0\0@\0008\0\7\0@\0\33\0\32\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\304\213\1\0\0\0\0\0\304\213\1\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0H\233\1\0\0\0\0\0H\233!\0\0\0\0\0H\233!\0\0\0\0\0\270\7\0\0\0\0\0\0\210\10\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0x\233\1\0\0\0\0\0x\233!\0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=109296, ...}) = 0
+3857  mmap(NULL, 2204624, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb57abb5000
+3857  mprotect(0x7fb57abce000, 2097152, PROT_NONE) = 0
+3857  mmap(0x7fb57adce000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19000) = 0x7fb57adce000
+3857  close(3)                          = 0
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/usr/lib/x86_64-linux-gnu/libgssapi.so.3", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20\331\0\0\0\0\0\0@\0\0\0\0\0\0\0\340\320\3\0\0\0\0\0\0\0\0\0@\0008\0\7\0@\0\34\0\33\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\\\226\3\0\0\0\0\0\\\226\3\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0\310\243\3\0\0\0\0\0\310\243#\0\0\0\0\0\310\243#\0\0\0\0\0\370+\0\0\0\0\0\0\220-\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\250\252\3\0\0\0\0\0\250\252#\0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=251872, ...}) = 0
+3857  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb57dddb000
+3857  mmap(NULL, 2347352, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb57a977000
+3857  mprotect(0x7fb57a9b1000, 2097152, PROT_NONE) = 0
+3857  mmap(0x7fb57abb1000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3a000) = 0x7fb57abb1000
+3857  mmap(0x7fb57abb4000, 344, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fb57abb4000
+3857  close(3)                          = 0
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/usr/lib/x86_64-linux-gnu/libtasn1.so.6", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320)\0\0\0\0\0\0@\0\0\0\0\0\0\0\2002\1\0\0\0\0\0\0\0\0\0@\0008\0\7\0@\0\34\0\33\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\264\33\1\0\0\0\0\0\264\33\1\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0\0%\1\0\0\0\0\0\0%!\0\0\0\0\0\0%!\0\0\0\0\0D\f\0\0\0\0\0\0(\17\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\320-\1\0\0\0\0\0\320-!\0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=80256, ...}) = 0
+3857  mmap(NULL, 2176040, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb57a763000
+3857  mprotect(0x7fb57a775000, 2097152, PROT_NONE) = 0
+3857  mmap(0x7fb57a975000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x12000) = 0x7fb57a975000
+3857  close(3)                          = 0
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/usr/lib/x86_64-linux-gnu/libp11-kit.so.0", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\321\0\0\0\0\0\0@\0\0\0\0\0\0\0\220\21\4\0\0\0\0\0\0\0\0\0@\0008\0\7\0@\0\33\0\32\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\334\243\3\0\0\0\0\0\334\243\3\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0\10\255\3\0\0\0\0\0\10\255#\0\0\0\0\0\10\255#\0\0\0\0\0Xc\0\0\0\0\0\0Hg\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\240\375\3\0\0\0\0\0\240\375#\0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=268368, ...}) = 0
+3857  mmap(NULL, 2364496, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb57a521000
+3857  mprotect(0x7fb57a55c000, 2093056, PROT_NONE) = 0
+3857  mmap(0x7fb57a75b000, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3a000) = 0x7fb57a75b000
+3857  close(3)                          = 0
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/lib/x86_64-linux-gnu/libgpg-error.so.0", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\t\0\0\0\0\0\0@\0\0\0\0\0\0\0pA\0\0\0\0\0\0\0\0\0\0@\0008\0\7\0@\0\32\0\31\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\\0\0\0\0\0\0\0\\0\0\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0\350=\0\0\0\0\0\0\350= \0\0\0\0\0\350= \0\0\0\0\0\200\2\0\0\0\0\0\0\210\2\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\10>\0\0\0\0\0\0\10> \0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=18416, ...}) = 0
+3857  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb57ddda000
+3857  mmap(NULL, 2113648, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb57a31c000
+3857  mprotect(0x7fb57a320000, 2093056, PROT_NONE) = 0
+3857  mmap(0x7fb57a51f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7fb57a51f000
+3857  close(3)                          = 0
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/lib/x86_64-linux-gnu/libkeyutils.so.1", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \20\0\0\0\0\0\0@\0\0\0\0\0\0\00001\0\0\0\0\0\0\0\0\0\0@\0008\0\7\0@\0\32\0\31\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0|\37\0\0\0\0\0\0|\37\0\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0H-\0\0\0\0\0\0H- \0\0\0\0\0H- \0\0\0\0\0\300\2\0\0\0\0\0\0\310\2\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0`-\0\0\0\0\0\0`- \0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=14256, ...}) = 0
+3857  mmap(NULL, 2109456, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb57a118000
+3857  mprotect(0x7fb57a11a000, 2097152, PROT_NONE) = 0
+3857  mmap(0x7fb57a31a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fb57a31a000
+3857  close(3)                          = 0
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/usr/lib/x86_64-linux-gnu/libheimntlm.so.0", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300*\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\205\0\0\0\0\0\0\0\0\0\0@\0008\0\7\0@\0\34\0\33\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\244v\0\0\0\0\0\0\244v\0\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0Hy\0\0\0\0\0\0Hy \0\0\0\0\0Hy \0\0\0\0\0\250\n\0\0\0\0\0\0\310\n\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\240}\0\0\0\0\0\0\240} \0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=35856, ...}) = 0
+3857  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb57ddd9000
+3857  mmap(NULL, 2130960, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb579f0f000
+3857  mprotect(0x7fb579f17000, 2093056, PROT_NONE) = 0
+3857  mmap(0x7fb57a116000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7fb57a116000
+3857  close(3)                          = 0
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/usr/lib/x86_64-linux-gnu/libkrb5.so.26", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0000\304\1\0\0\0\0\0@\0\0\0\0\0\0\0\210g\10\0\0\0\0\0\0\0\0\0@\0008\0\7\0@\0\34\0\33\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0|\22\10\0\0\0\0\0|\22\10\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0\220\36\10\0\0\0\0\0\220\36(\0\0\0\0\0\220\36(\0\0\0\0\0\330G\0\0\0\0\0\0 S\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\10<\10\0\0\0\0\0\10<(\0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=552584, ...}) = 0
+3857  mmap(NULL, 2650544, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb579c87000
+3857  mprotect(0x7fb579d09000, 2093056, PROT_NONE) = 0
+3857  mmap(0x7fb579f08000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x81000) = 0x7fb579f08000
+3857  mmap(0x7fb579f0e000, 432, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fb579f0e000
+3857  close(3)                          = 0
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/usr/lib/x86_64-linux-gnu/libasn1.so.8", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\234\1\0\0\0\0\0@\0\0\0\0\0\0\0000\2\n\0\0\0\0\0\0\0\0\0@\0008\0\7\0@\0\34\0\33\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0<\304\t\0\0\0\0\0<\304\t\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0\300\322\t\0\0\0\0\0\300\322)\0\0\0\0\0\300\322)\0\0\0\0\0P.\0\0\0\0\0\0p.\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\240\335\t\0\0\0\0\0\240\335)\0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=657712, ...}) = 0
+3857  mmap(NULL, 2752816, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb5799e6000
+3857  mprotect(0x7fb579a83000, 2097152, PROT_NONE) = 0
+3857  mmap(0x7fb579c83000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9d000) = 0x7fb579c83000
+3857  close(3)                          = 0
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/usr/lib/x86_64-linux-gnu/libhcrypto.so.4", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300g\0\0\0\0\0\0@\0\0\0\0\0\0\0H\26\3\0\0\0\0\0\0\0\0\0@\0008\0\7\0@\0\34\0\33\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0<\374\2\0\0\0\0\0<\374\2\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0\310\0\3\0\0\0\0\0\310\0#\0\0\0\0\0\310\0#\0\0\0\0\0`\24\0\0\0\0\0\0\200#\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\220\r\3\0\0\0\0\0\220\r#\0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=204104, ...}) = 0
+3857  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb57ddd8000
+3857  mmap(NULL, 2303048, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb5797b3000
+3857  mprotect(0x7fb5797e3000, 2097152, PROT_NONE) = 0
+3857  mmap(0x7fb5799e3000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x30000) = 0x7fb5799e3000
+3857  mmap(0x7fb5799e5000, 1096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fb5799e5000
+3857  close(3)                          = 0
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/usr/lib/x86_64-linux-gnu/libroken.so.18", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0pL\0\0\0\0\0\0@\0\0\0\0\0\0\0\360G\1\0\0\0\0\0\0\0\0\0@\0008\0\7\0@\0\33\0\32\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0L3\1\0\0\0\0\0L3\1\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0\200=\1\0\0\0\0\0\200=!\0\0\0\0\0\200=!\0\0\0\0\0`\t\0\0\0\0\0\0\340\n\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\230=\1\0\0\0\0\0\230=!\0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=85680, ...}) = 0
+3857  mmap(NULL, 2181216, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb57959e000
+3857  mprotect(0x7fb5795b2000, 2093056, PROT_NONE) = 0
+3857  mmap(0x7fb5797b1000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x13000) = 0x7fb5797b1000
+3857  close(3)                          = 0
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/usr/lib/x86_64-linux-gnu/libffi.so.6", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\26\0\0\0\0\0\0@\0\0\0\0\0\0\0 r\0\0\0\0\0\0\0\0\0\0@\0008\0\7\0@\0\33\0\32\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\354h\0\0\0\0\0\0\354h\0\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0000m\0\0\0\0\0\0000m \0\0\0\0\0000m \0\0\0\0\0\340\3\0\0\0\0\0\0\230\10\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\10n\0\0\0\0\0\0\10n \0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=30944, ...}) = 0
+3857  mmap(NULL, 2127304, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb579396000
+3857  mprotect(0x7fb57939d000, 2093056, PROT_NONE) = 0
+3857  mmap(0x7fb57959c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7fb57959c000
+3857  close(3)                          = 0
+3857  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb57ddd7000
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/usr/lib/x86_64-linux-gnu/libwind.so.0", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0p\16\0\0\0\0\0\0@\0\0\0\0\0\0\0\230\201\2\0\0\0\0\0\0\0\0\0@\0008\0\7\0@\0\34\0\33\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0004n\2\0\0\0\0\0004n\2\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0\300|\2\0\0\0\0\0\300|\"\0\0\0\0\0\300|\"\0\0\0\0\0\270\3\0\0\0\0\0\0\340\3\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\240}\2\0\0\0\0\0\240}\"\0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=166040, ...}) = 0
+3857  mmap(NULL, 2261152, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb57916d000
+3857  mprotect(0x7fb579194000, 2097152, PROT_NONE) = 0
+3857  mmap(0x7fb579394000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x27000) = 0x7fb579394000
+3857  close(3)                          = 0
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/usr/lib/x86_64-linux-gnu/libheimbase.so.1", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20)\0\0\0\0\0\0@\0\0\0\0\0\0\0\300\326\0\0\0\0\0\0\0\0\0\0@\0008\0\7\0@\0\34\0\33\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\\\313\0\0\0\0\0\0\\\313\0\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0`\315\0\0\0\0\0\0`\315 \0\0\0\0\0`\315 \0\0\0\0\0@\10\0\0\0\0\0\0008\r\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\310\315\0\0\0\0\0\0\310\315 \0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=56768, ...}) = 0
+3857  mmap(NULL, 2153112, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb578f5f000
+3857  mprotect(0x7fb578f6c000, 2093056, PROT_NONE) = 0
+3857  mmap(0x7fb57916b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xc000) = 0x7fb57916b000
+3857  close(3)                          = 0
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/usr/lib/x86_64-linux-gnu/libhx509.so.5", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\16\1\0\0\0\0\0@\0\0\0\0\0\0\0\210|\4\0\0\0\0\0\0\0\0\0@\0008\0\7\0@\0\34\0\33\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0,J\4\0\0\0\0\0,J\4\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0\240J\4\0\0\0\0\0\240J$\0\0\0\0\0\240J$\0\0\0\0\0\3100\0\0\0\0\0\0\2105\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0\350[\4\0\0\0\0\0\350[$\0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=295816, ...}) = 0
+3857  mmap(NULL, 2392104, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb578d16000
+3857  mprotect(0x7fb578d5b000, 2093056, PROT_NONE) = 0
+3857  mmap(0x7fb578f5a000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x44000) = 0x7fb578f5a000
+3857  mmap(0x7fb578f5e000, 40, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fb578f5e000
+3857  close(3)                          = 0
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/usr/lib/x86_64-linux-gnu/libsqlite3.so.0", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`\235\0\0\0\0\0\0@\0\0\0\0\0\0\0@~\v\0\0\0\0\0\0\0\0\0@\0008\0\7\0@\0\32\0\31\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\354?\v\0\0\0\0\0\354?\v\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0\360@\v\0\0\0\0\0\360@+\0\0\0\0\0\360@+\0\0\0\0\0000<\0\0\0\0\0\0\350A\0\0\0\0\0\0\0\0 \0\0\0\0\0\2\0\0\0\6\0\0\0@\\\v\0\0\0\0\0@\\+\0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=754880, ...}) = 0
+3857  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb57ddd6000
+3857  mmap(NULL, 2851544, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb578a5d000
+3857  mprotect(0x7fb578b11000, 2097152, PROT_NONE) = 0
+3857  mmap(0x7fb578d11000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb4000) = 0x7fb578d11000
+3857  mmap(0x7fb578d15000, 728, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fb578d15000
+3857  close(3)                          = 0
+3857  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+3857  open("/lib/x86_64-linux-gnu/libcrypt.so.1", O_RDONLY|O_CLOEXEC) = 3
+3857  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300\f\0\0\0\0\0\0@\0\0\0\0\0\0\0\350\241\0\0\0\0\0\0\0\0\0\0@\0008\0\t\0@\0\36\0\35\0\6\0\0\0\5\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\370\1\0\0\0\0\0\0\370\1\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\200\203\0\0\0\0\0\0\200\203\0\0\0\0\0\0\200\203\0\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+3857  fstat(3, {st_mode=S_IFREG|0644, st_size=43368, ...}) = 0
+3857  mmap(NULL, 2327072, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb578824000
+3857  mprotect(0x7fb57882d000, 2097152, PROT_NONE) = 0
+3857  mmap(0x7fb578a2d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9000) = 0x7fb578a2d000
+3857  mmap(0x7fb578a2f000, 184864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fb578a2f000
+3857  close(3)                          = 0
+3857  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb57ddd5000
+3857  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb57ddd4000
+3857  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb57ddd3000
+3857  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb57ddd1000
+3857  arch_prctl(ARCH_SET_FS, 0x7fb57ddd1780) = 0
+3857  mprotect(0x7fb57d51f000, 16384, PROT_READ) = 0
+3857  mprotect(0x7fb578a2d000, 4096, PROT_READ) = 0
+3857  mprotect(0x7fb57d742000, 4096, PROT_READ) = 0
+3857  mprotect(0x7fb57baf6000, 4096, PROT_READ) = 0
+3857  mprotect(0x7fb578d11000, 8192, PROT_READ) = 0
+3857  mprotect(0x7fb57b3f8000, 4096, PROT_READ) = 0
+3857  mprotect(0x7fb57afe7000, 4096, PROT_READ) = 0
+3857  mprotect(0x7fb5797b1000, 4096, PROT_READ) = 0
+3857  mprotect(0x7fb579c83000, 4096, PROT_READ) = 0
+3857  mprotect(0x7fb5799e3000, 4096, PROT_READ) = 0
+3857  mprotect(0x7fb579394000, 4096, PROT_READ) = 0
+3857  mprotect(0x7fb57916b000, 4096, PROT_READ) = 0
+3857  mprotect(0x7fb578f5a000, 8192, PROT_READ) = 0
+3857  mprotect(0x7fb57959c000, 4096, PROT_READ) = 0
+3857  mprotect(0x7fb579f08000, 12288, PROT_READ) = 0
+3857  mprotect(0x7fb57a116000, 4096, PROT_READ) = 0
+3857  mprotect(0x7fb57a31a000, 4096, PROT_READ) = 0
+3857  mprotect(0x7fb57a51f000, 4096, PROT_READ) = 0
+3857  mprotect(0x7fb57a75b000, 24576, PROT_READ) = 0
+3857  mprotect(0x7fb57a975000, 4096, PROT_READ) = 0
+3857  mprotect(0x7fb57abb1000, 4096, PROT_READ) = 0
+3857  mprotect(0x7fb57adce000, 4096, PROT_READ) = 0
+3857  mprotect(0x7fb57b1f4000, 4096, PROT_READ) = 0
+3857  mprotect(0x7fb57b625000, 8192, PROT_READ) = 0
+3857  mprotect(0x7fb57b8e5000, 53248, PROT_READ) = 0
+3857  mprotect(0x7fb57bd74000, 4096, PROT_READ) = 0
+3857  mprotect(0x7fb57d95f000, 4096, PROT_READ) = 0
+3857  mprotect(0x7fb57c02e000, 24576, PROT_READ) = 0
+3857  mprotect(0x7fb57c494000, 4096, PROT_READ) = 0
+3857  mprotect(0x7fb57c282000, 8192, PROT_READ) = 0
+3857  mprotect(0x7fb57c6da000, 4096, PROT_READ) = 0
+3857  mprotect(0x7fb57ca8f000, 110592, PROT_READ) = 0
+3857  mprotect(0x7fb57cd0e000, 12288, PROT_READ) = 0
+3857  mprotect(0x7fb57cf30000, 4096, PROT_READ) = 0
+3857  mprotect(0x7fb57d163000, 4096, PROT_READ) = 0
+3857  mprotect(0x7fb57dbc5000, 8192, PROT_READ) = 0
+3857  mprotect(0x624000, 4096, PROT_READ) = 0
+3857  mprotect(0x7fb57ddea000, 4096, PROT_READ) = 0
+3857  munmap(0x7fb57dde2000, 23363)     = 0
+3857  set_tid_address(0x7fb57ddd1a50)   = 3857
+3857  set_robust_list(0x7fb57ddd1a60, 24) = 0
+3857  futex(0x7fff3f8c5b30, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 1, NULL, 7fb57ddd1780) = -1 EAGAIN (Resource temporarily unavailable)
+3857  rt_sigaction(SIGRTMIN, {0x7fb57d5309f0, [], SA_RESTORER|SA_SIGINFO, 0x7fb57d53a330}, NULL, 8) = 0
+3857  rt_sigaction(SIGRT_1, {0x7fb57d530a80, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7fb57d53a330}, NULL, 8) = 0
+3857  rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+3857  getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+3857  brk(0)                            = 0x2579000
+3857  brk(0x259a000)                    = 0x259a000
+3857  futex(0x7fb57a762400, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+3857  pipe([3, 4])                      = 0
+3857  close(3)                          = 0
+3857  close(4)                          = 0
+3857  rt_sigaction(SIGPIPE, {SIG_IGN, [PIPE], SA_RESTORER|SA_RESTART, 0x7fb57d19bcb0}, {SIG_DFL, [], 0}, 8) = 0
+3857  brk(0x25c0000)                    = 0x25c0000
+3857  open("/root/.curlrc", O_RDONLY)   = -1 ENOENT (No such file or directory)
+3857  ioctl(1, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+3857  rt_sigaction(SIGPIPE, NULL, {SIG_IGN, [PIPE], SA_RESTORER|SA_RESTART, 0x7fb57d19bcb0}, 8) = 0
+3857  rt_sigaction(SIGPIPE, {SIG_IGN, [PIPE], SA_RESTORER|SA_RESTART, 0x7fb57d53a330}, NULL, 8) = 0
+3857  socket(PF_INET, SOCK_STREAM, IPPROTO_IP) = 3
+3857  setsockopt(3, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+3857  setsockopt(3, SOL_TCP, TCP_KEEPIDLE, [60], 4) = 0
+3857  setsockopt(3, SOL_TCP, TCP_KEEPINTVL, [60], 4) = 0
+3857  fcntl(3, F_GETFL)                 = 0x2 (flags O_RDWR)
+3857  fcntl(3, F_SETFL, O_RDWR|O_NONBLOCK) = 0
+3857  connect(3, {sa_family=AF_INET, sin_port=htons(80), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+3857  poll([{fd=3, events=POLLOUT|POLLWRNORM}], 1, 0) = 1 ([{fd=3, revents=POLLOUT|POLLWRNORM}])
+3857  getsockopt(3, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+3857  getpeername(3, {sa_family=AF_INET, sin_port=htons(80), sin_addr=inet_addr("127.0.0.1")}, [16]) = 0
+3857  getsockname(3, {sa_family=AF_INET, sin_port=htons(45842), sin_addr=inet_addr("127.0.0.1")}, [16]) = 0
+3857  sendto(3, "HEAD / HTTP/1.1\r\nUser-Agent: curl/7.35.0\r\nHost: 127.0.0.1\r\nAccept: */*\r\n\r\n", 74, MSG_NOSIGNAL, NULL, 0) = 74
+3857  poll([{fd=3, events=POLLIN|POLLPRI|POLLRDNORM|POLLRDBAND}], 1, 0) = 0 (Timeout)
+3857  poll([{fd=3, events=POLLIN}], 1, 1) = 0 (Timeout)
+3857  poll([{fd=3, events=POLLIN|POLLPRI|POLLRDNORM|POLLRDBAND}], 1, 0) = 0 (Timeout)
+3857  poll([{fd=3, events=POLLIN}], 1, 198) = 1 ([{fd=3, revents=POLLIN}])
+3857  poll([{fd=3, events=POLLIN|POLLPRI|POLLRDNORM|POLLRDBAND}], 1, 0) = 1 ([{fd=3, revents=POLLIN|POLLRDNORM}])
+3857  recvfrom(3, "HTTP/1.0 500 Internal Server Error\r\nDate: Thu, 09 Nov 2023 09:51:55 GMT\r\nServer: Apache/2.4.7 (Ubuntu)\r\nX-Powered-By: PHP/5.5.9-1ubuntu4.21\r\nConnection: close\r\nContent-Type: text/html\r\n\r\n", 16384, 0, NULL, NULL) = 187
+3857  fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+3857  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb57dde7000
+3857  write(1, "HTTP/1.0 500 Internal Server Error\r\n", 36) = 36
+3857  write(1, "Date: Thu, 09 Nov 2023 09:51:55 GMT\r\n", 37) = 37
+3857  write(1, "Server: Apache/2.4.7 (Ubuntu)\r\n", 31) = 31
+3857  write(1, "X-Powered-By: PHP/5.5.9-1ubuntu4.21\r\n", 37) = 37
+3857  write(1, "Connection: close\r\n", 19) = 19
+3857  write(1, "Content-Type: text/html\r\n", 25) = 25
+3857  write(1, "\r\n", 2)               = 2
+3857  close(3)                          = 0
+3857  rt_sigaction(SIGPIPE, {SIG_IGN, [PIPE], SA_RESTORER|SA_RESTART, 0x7fb57d53a330}, NULL, 8) = 0
+3857  rt_sigaction(SIGPIPE, NULL, {SIG_IGN, [PIPE], SA_RESTORER|SA_RESTART, 0x7fb57d53a330}, 8) = 0
+3857  rt_sigaction(SIGPIPE, {SIG_IGN, [PIPE], SA_RESTORER|SA_RESTART, 0x7fb57d53a330}, NULL, 8) = 0
+3857  rt_sigaction(SIGPIPE, NULL, {SIG_IGN, [PIPE], SA_RESTORER|SA_RESTART, 0x7fb57d53a330}, 8) = 0
+3857  rt_sigaction(SIGPIPE, {SIG_IGN, [PIPE], SA_RESTORER|SA_RESTART, 0x7fb57d53a330}, NULL, 8) = 0
+3857  rt_sigaction(SIGPIPE, {SIG_IGN, [PIPE], SA_RESTORER|SA_RESTART, 0x7fb57d53a330}, NULL, 8) = 0
+3857  rt_sigaction(SIGPIPE, {SIG_IGN, [PIPE], SA_RESTORER|SA_RESTART, 0x7fb57d53a330}, NULL, 8) = 0
+3857  exit_group(0)                     = ?
+3857  +++ exited with 0 +++
